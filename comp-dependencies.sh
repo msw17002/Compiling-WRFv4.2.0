@@ -97,7 +97,7 @@ if [ -f "$HOME/apps/Downloads/$HDF5.tar.gz" ]; then
 else
     echo "wget -q 'https://www.hdfgroup.org/package/hdf5-1-12-2-tar-gz/?wpdmdl=16474&amp;refresh=64d28450662021691518032' -O "'$HOME/apps/Downloads/$HDF5.tar.gz'
     sleep $DT
-    wget -q https://www.hdfgroup.org/package/hdf5-1-12-2-tar-gz/?wpdmdl=16474&amp;refresh=64d28450662021691518032 -O $HOME/apps/Downloads/$HDF5.tar.gz
+    wget -q 'https://www.hdfgroup.org/package/hdf5-1-12-2-tar-gz/?wpdmdl=16474&amp;refresh=64d28450662021691518032' -O $HOME/apps/Downloads/$HDF5.tar.gz
 fi
 #-  netcdf4-C source code
 if [ -f "$HOME/apps/Downloads/$NTCC.tar.gz" ]; then
