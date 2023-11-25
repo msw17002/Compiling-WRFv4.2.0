@@ -36,18 +36,18 @@ export HDF5=$DIR
 export NETCDF=$DIR
 sleep 5
 echo "==============================================================================="
-echo "=================Download and uncompress WRFv4.5.0============================="
+echo "=================Download and uncompress WRFv4.2.0============================="
 #===Set directory structure
 #-  apps directory
 if [ -d "$HOME/WRF" ]; then
    echo "$HOME/WRF already exists!"
 else
-   echo 'wget -q https://github.com/wrf-model/WRF/archive/refs/tags/v4.5.tar.gz -O WRF.tar.gz'
+   echo 'wget -q https://github.com/wrf-model/WRF/archive/refs/tags/v4.2.tar.gz -O WRF.tar.gz'
    echo 'tar -xvzf WRF.tar.gz'
-   echo 'mv WRF-4.5 WRF'
-   wget -q https://github.com/wrf-model/WRF/archive/refs/tags/v4.5.tar.gz -O WRF.tar.gz
+   echo 'mv WRF-4.2 WRF'
+   wget -q https://github.com/wrf-model/WRF/archive/refs/tags/v4.2.tar.gz -O WRF.tar.gz
    tar -xvzf WRF.tar.gz
-   mv WRF-4.5 WRF
+   mv WRF-4.2 WRF
    sleep 5
 fi
 echo "==============================================================================="
