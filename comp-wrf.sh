@@ -58,3 +58,4 @@ echo './compile em_real'
 cd ./WRF
 ./configure
 ./compile em_real
+rm WRF.tar.gz
