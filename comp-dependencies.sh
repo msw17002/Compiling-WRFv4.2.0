@@ -80,7 +80,7 @@ if [ -f "$HOME/apps/Downloads/$CMAK.tar.gz" ]; then
 else
     echo 'wget -q 'https://github.com/Kitware/CMake/releases/download/v3.28.0-rc1/$CMAK.tar.gz' -O $HOME/apps/Downloads/$CMAK.tar.gz'
     sleep $DT
-    wget -q https://github.com/Kitware/CMake/releases/download/v3.28.0-rc1/${CMAK}.tar.gz -O $HOME/apps/Downloads/${CMAK}.tar.gz
+    wget -q 'https://github.com/Kitware/CMake/releases/download/v3.28.0-rc1/${CMAK}.tar.gz' -O $HOME/apps/Downloads/${CMAK}.tar.gz
 fi
 #-  zlib source code
 if [ -d "$HOME/apps/Downloads/zlib" ]; then
