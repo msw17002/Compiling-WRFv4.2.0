@@ -55,5 +55,6 @@ echo "====================Compile WRF em_real w/mpich===========================
 echo 'cd ./WRF'
 echo './configure'
 echo './compile em_real'
+cd ./WRF
 ./configure
 ./compile em_real
